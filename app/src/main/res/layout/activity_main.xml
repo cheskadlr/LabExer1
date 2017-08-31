@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cheskadelarosa.labexer1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1 :"
+        android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/etQ1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/tvQ1"
+        android:layout_alignBottom="@+id/tvQ1"
+        android:layout_toRightOf="@+id/tvQ1"
+        android:layout_toEndOf="@+id/tvLabExer"
+        android:hint="Enter Quiz 1"/>
+
+    <TextView
+        android:id="@+id/tvQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvQ1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Quiz 2 :"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etQ2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/tvQ2"
+        android:layout_alignBottom="@+id/tvQ2"
+        android:layout_toRightOf="@+id/tvQ2"
+        android:layout_toEndOf="@+id/tvLabExer"
+        android:hint="Enter Quiz 2"/>
+
+    <TextView
+        android:id="@+id/tvSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvQ2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Seatworks :"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etSW"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/tvSW"
+        android:layout_alignBottom="@+id/tvSW"
+        android:layout_toRightOf="@+id/tvSW"
+        android:layout_toEndOf="@+id/tvLabExer"
+        android:hint="Enter Seatworks"/>
+
+    <TextView
+        android:id="@+id/tvLabExer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSW"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Lab Exercises :"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etLabExer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/tvLabExer"
+        android:layout_alignBottom="@+id/tvLabExer"
+        android:layout_toRightOf="@+id/tvLabExer"
+        android:layout_toEndOf="@+id/tvLabExer"
+        android:hint="Enter Lab Exercises"/>
+
+    <TextView
+        android:id="@+id/tvMajorEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvLabExer"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Major Exam :"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etMajorEx"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/tvMajorEx"
+        android:layout_alignBottom="@+id/tvMajorEx"
+        android:layout_toRightOf="@+id/tvMajorEx"
+        android:layout_toEndOf="@+id/tvLabExer"
+        android:hint="Enter Major Exam"/>
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        android:layout_below="@+id/etMajorEx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:onClick="callComputeGrade"/>
+
+
+</RelativeLayout>
